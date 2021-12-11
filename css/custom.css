@@ -1,0 +1,386 @@
+.cards {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+
+.cards .card {
+  width: 100%;
+  margin: 2% 0;
+}
+
+.card {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.cards .card-img-top {
+    width: auto;
+}
+
+.cards .card-body {
+    padding: 1rem;
+}
+
+.cards .card-title {
+    margin-bottom: .75rem;
+}
+
+.card-body .card-language {
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+
+  .cards {
+    width: 120%;
+    margin: 0 -10%;
+  }
+
+  .cards .card {
+    width: 44%;
+    margin: 3%;
+  }
+
+}
+
+
+ul.actions {
+    cursor: default;
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+ul.actions li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+    vertical-align: middle;
+}
+
+.not-available {
+  color: red;
+}
+
+.footer-hr {
+    display: inline-block;
+    width: 50%;
+    border-bottom: 1px solid #666;
+}
+
+.site-footer .credit {
+  font-size: 0.6em;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer .credit {
+    font-size: 0.8em;
+  }
+}
+
+.resume-footer {
+  color: #666;
+  /* border-left: 4px solid #999;
+  padding-left: 2%; */
+  margin-bottom: 2%;
+}
+.contrib-number {
+  font-weight: 500;
+}
+
+.site-header-container .has-cover img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.home a, .navigation a, .site-footer a {
+  color: #333;
+}
+
+.hljs, .hljs-tag, .css .hljs-rule, .css .hljs-value, .aspectj .hljs-function, .css .hljs-function .hljs-preprocessor, .hljs-pragma {
+  color: #444444;
+}
+
+.hljs-built_in {
+ color: currentColor;
+}
+
+.hljs {
+  background-color: #f6f8fa80 !important;
+}
+
+.hljs-pseudo {
+  color: blue;
+}
+
+.hljs-string {
+  color: #c71585;
+}
+
+.hljs-tag .hljs-value, .hljs-code, .hljs-title, .css .hljs-class, .hljs-class .hljs-title:last-child {
+  color: green;
+}
+
+code {
+  background-color: #f6f8fa;
+  max-height: 30em;
+  scrollbar-width: thin;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+    font-weight: 500;
+}
+
+code.language-plain {
+  width: 100%;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.talks {
+  border: 1px solid #666;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.talks-hr {
+  margin-top: 0;
+}
+
+.sideimg {
+  width: 100% !important;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .sideimg {
+    width: 25% !important;
+    border-radius: 4px;
+    padding: 2px;
+  }
+}
+
+.fullimg {
+  width: 100% !important;
+  border-radius: 0.5rem;
+}
+
+.diffimg {
+  border-radius: 0.5rem;
+  margin-left: 0 !important;
+}
+
+.hljs-variable, .hljs-params, .hljs-class .hljs-title, .hljs-aspect .hljs-title {
+  color: #0f2f91;
+}
+
+.hljs-comment {
+  color: #047b00 !important;
+}
+
+html, body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 1px;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.post-readtime {
+  float: right;
+  font-size: 0.9em;
+}
+
+code {
+  padding: 0 .4em;
+}
+
+pre code.hljs {
+  font-size: 0.9em;
+}
+
+.page-content .post .share {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1025px) {
+  .intro {
+    border: 1px solid #dddddd;
+    border-radius: 16px;
+    margin: 1%;
+  }
+}
+
+.intro > div > p > a .fa {
+  color: black !important;
+  font-size: 32px !important;
+}
+
+.intro > .head-intro {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.intro h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.intro .about-me-direct {
+  display: block;
+  margin: 24px auto;
+  padding: 0.8em 1.25em;
+  font-size: 1.1em;
+  border-radius: 8px;
+  background-color: black;
+  font-weight: 500;
+  word-spacing: 1px;
+  letter-spacing: 0.03em;
+}
+
+.intro .about-me-direct:hover {
+  text-decoration: none;
+  background-color: #333;
+  color: #dddddd;
+}
+
+.head-cover {
+  width: 120px !important;
+  height: 120px;
+  border: 2px solid #999999;
+  border-radius: 50%;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+.soc-med {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;  
+}
+
+.soc-med a {
+  font-size: 2em;
+  margin: 8px 16px;
+}
+
+/* Email Subscribe */
+
+.es-topmost {
+  max-width: 784px;
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.es-content-main {
+  padding: 2em;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 1rem;
+}
+
+.es-title {
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.es-title-sp {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(0,0,0,0.4);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.es-form-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.es-email {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 0.5rem;
+  border-style: none;
+  border-width: 0;
+  color: rgba(0,0,0,0.8);
+  letter-spacing: 0.05rem;
+}
+
+.es-submit {
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+  margin-left: 0;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 00.5rem;
+  border-style: none;
+  border-width: 0;
+  opacity: 1;
+}
+
+.es-submit:hover {
+  transition: opacity .15s ease-in;
+}
+
+@media screen and (min-width: 768px) {
+  .es-topmost {
+    padding: 0;
+  }
+  .es-form-main {
+    flex-direction: row;
+  }
+  .es-submit {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+.subs-p {
+  font-size: 1.25em;
+}
+
+.subs-head {
+  margin-top: 2em;
+}
+
+.hljs {
+  border: 0.1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-family: 'Jetbrains-Mono';
+}

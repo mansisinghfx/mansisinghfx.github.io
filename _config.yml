@@ -1,0 +1,111 @@
+
+# Site settings
+title: Jogendra Kumar
+name: Jogendra Kumar
+subtitle: Learnings Software Engineering and Doing Open Source Everyday!
+email: jogendrafx@gmail.com
+description: >
+  Personal website about me and technical stuffs I find useful.
+baseurl: ""
+url: "https://jogendra.dev"
+twitter_username: jogendrafx
+github_username:  jogendra
+permalink: :title
+cover: "/assets/page-cover.png"
+logo: "/assets/nav-logo.png"
+head: "/assets/head-cover.jpg"
+
+# Build settings
+markdown: kramdown
+paginate: 7
+paginate_path: "/page:num/"
+inter_post_navigation: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: "Jogendra"
+
+
+# External gems
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+  - jekyll-seo-tag
+
+exclude:
+  - "/vendor/"
+
+# Collections
+collections:
+  - talks
+  - projects
+
+#
+# Social settings are used in two places:
+# * In the footer, as links to your personal profiles
+# * After each blog post for sharing widgets
+#
+# Example:
+#
+# social:
+#   - name: Twitter                         # Name of the service
+#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
+#     username: "@TheBenCentra"             # (User) Name to display in the footer link
+#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
+#     desc: Follow me on Twitter            # Description to display as link title, etc
+#     share: true                           # Include in the "Share" section of posts
+
+social:
+  - name: Twitter
+    icon: twitter
+    username: jogendrafx
+    url: https://twitter.com/jogendrafx
+    desc: Follow me on Twitter
+    share: true
+
+  - name: GitHub
+    icon: github
+    username: jogendra
+    url: https://github.com/jogendra
+    desc: Fork me on GitHub
+    share: false
+
+  - name: LinkedIn
+    icon: linkedin
+    username: Jogendra Kumar
+    url: https://www.linkedin.com/in/jogendrasingh24/
+    desc: Connect with me on LinkedIn
+    share: true
+
+  - name: Instagram
+    icon: instagram
+    username: jogendrafx
+    url: https://www.instagram.com/jogendrafx/
+    desc: Follow me on Instagram
+    share: true
+
+  - name: Reddit
+    icon: reddit
+    username:
+    url:
+    desc: Share to Reddit
+    share: true
+
+# Social sharing protocols
+# These are for automatically generating sharing metadata for FB and Twitter
+# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
+protocols:
+    fb_image: "/assets/head-cover.jpg"
+    fb_image_width: 612
+    fb_image_height: 605
+    fb_image_type: "image/jpg"
+
+    twitter_image: "/assets/head-cover.jpg"
+
+    os_repo: "https://github.com/jogendra/jogendra.github.io"
+    os_rcs_type: "git"
+    os_src: "git@github.com:jogendra.github.io.git"

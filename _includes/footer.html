@@ -1,0 +1,46 @@
+{% if page.title != "About Me" %}
+<footer class="site-footer">
+  <hr class="footer-hr">
+  <div align="center">
+  <p>
+  <a href="mailto:jogendrafx@gmail.com"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></a>
+  &nbsp; &nbsp; &nbsp;
+  <a href="https://github.com/jogendra"><i class="fa fa-github" aria-hidden="true"></i></a>
+  &nbsp; &nbsp; &nbsp;
+  <a href="https://twitter.com/jogendrafx"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  &nbsp; &nbsp; &nbsp;
+  <a href="https://www.linkedin.com/in/jogendrasingh24/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  &nbsp; &nbsp; &nbsp;
+  <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss" aria-hidden="true"></i></a>
+  &nbsp; &nbsp; &nbsp;
+  </p>
+  </div>
+  <p class="credit">Designed and Developed by <a href="https://twitter.com/jogendrafx">Jogendra</a> in <i class="fa fa-heart"></i> with <i class="fa fa-code"></i> and <i class="fa fa-coffee"></i></p>
+</footer>
+{% endif %}
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+<script>
+$(document).ready(function() {
+  // Syntax highlighting
+  hljs.initHighlightingOnLoad();
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
+  //Make sure all the post's links open in a new tab
+  jQuery('.post-content a, .post-excerpt a').not('.footnote, .reversefootnote').attr ('target', '_blank');
+
+});
+</script>
